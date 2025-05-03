@@ -1,5 +1,4 @@
 ﻿flask
-redirect
 url_for
 render_template
 gunicorn
