@@ -1,7 +1,13 @@
 from flask import Flask, render_template, request
 import datetime as dt
 import requests
+from dotenv import load_dotenv
 import os
+
+load_dotenv()  # Load environment variables from .env file
+
+API_KEY = os.getenv("OPENWEATHER_API_KEY")  # Get the API key from environment
+
 
 app = Flask(__name__)
 
