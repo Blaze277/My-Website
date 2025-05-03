@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block title %}HOME{% endblock %} {% block body %}
+<div class="div-main-title">
+  <h1 align="center" class="main-title">THE WEBSITE</h1>
+  <p class="under_head" align="center" style="padding: 0 50px">
+    <b>Will not fail this time around!</b>
+  </p>
+  <h1 align="center" class="bg-txt">THE WEBSITE</h1>
+</div>
+
+<div class="content">
+  <div>
+    <form action="/" method="POST">
+      <p>
+        <input type="text" name="nm" placeholder="Enter city" required />
+      </p>
+      <p>
+        <input type="submit" value="Confirm City" />
+      </p>
+    </form>
+  </div>
+
+  <div class="weather box">
+    <h2>WEATHER</h2>
+    {% if details %}
+    <p class="info">{{ details }}</p>
+    {% else %}
+    <p class="info">Enter a city above to get the weather.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,84 @@
+
+
+  
+  body {
+    overflow: scroll;
+    background-color: #187cd3; /* light blue background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative; 
+    height: 100vh;
+    margin: 0;
+    
+  }
+
+  .bg-txt {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0.3;
+    font-size: 180px;
+    white-space: nowrap;
+    color: white;
+    pointer-events: none;
+  }
+
+  h1.main-title {
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 160px;
+    color: black;
+    white-space: nowrap;
+  }
+  p{
+    position: relative;
+    top: 400px;
+    font-size: 30px;
+    color: rgb(8, 50, 135);
+    text-decoration-line: underline overline;
+    text-underline-offset: 8px;
+    
+  }
+  img{
+    
+    position: relative;
+    margin-left: 20px;
+    top: 500px;
+    height: 400px;
+    width: 300px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color:rgb(8, 50, 135);
+  }
+
+  .info{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+  }
+  .content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Optional */
+  }
+  .under_head{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 15px;
+  }
+  h2{
+    padding-top: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    font-size: 60px;
+  }
+  .input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
