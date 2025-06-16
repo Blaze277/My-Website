@@ -1,29 +1,37 @@
 {% extends 'base.html' %} {% block title %}HOME{% endblock %} {% block body %}
 <div class="div-main-title">
-  <h1 align="center" class="main-title">THE WEBSITE</h1>
-  <p class="under_head" align="center" style="padding: 0 50px">
+  <b>
+    <h1 class="main-title">THE WEBSITE</h1>
+  </b>
+  <p class="under_head" align="center">
     <b>Will not fail this time around!</b>
   </p>
-  <h1 align="center" class="bg-txt">THE WEBSITE</h1>
+  <h1 class="bg-txt">THE WEBSITE</h1>
 </div>
 
 <div class="current-content">
   <div class="content-content">
-    <p class="content-head" align="justify">My Machine Learning Project</p>
-    <p style="margin-left: 20px">
+    <p class="content-head">My Machine Learning Project</p>
+    <p>
       This was my first Machine Learning Project. <br />
-      It was a very exiting and new experience as I <br />
-      no other prior experience on such assignments. <br />
-      It's isn't the best but ... Well I tried ?
+      It was a very exciting and new experience as I <br />
+      had no prior exposure to such assignments. <br />
+      It isn't the best, but... well, I tried!
     </p>
     <a
       class="ml-link"
       href="https://github.com/Blaze277/My-Machine-Learning-Project"
       target="_blank"
-      ><i class="fab fa-github"></i>Source Code for Project!</a
     >
+      <i class="fab fa-github"></i> Source Code for Project!
+    </a>
   </div>
-  <div style="border-left: 5px solid black; height: 570px"></div>
-  <div class="content-image"></div>
+  <div class="content-image">
+    <img
+      src="static/Screenshot 2025-06-15 210222.png"
+      alt="project-photo"
+      class="content-img"
+    />
+  </div>
 </div>
 {% endblock %}
