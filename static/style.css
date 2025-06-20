@@ -422,18 +422,84 @@ img {
     border-color: #0088ff;
   }
 }
+.Scroll-timeline {
+  border-radius: 25px;
+  box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.9);
+  background-color: #4e4e4e;
+  width: 90vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-.skill-bar {
-  height: 20px;
-  background: #ccc;
+.timeline-scroll-wrapper {
+  width: 90vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  padding: 10px 0;
+  height: auto; 
+  min-height: 150px;  
+  scrollbar-width: none;        
+  -ms-overflow-style: none;    
+}
+
+.timeline-scroll-wrapper::-webkit-scrollbar {
+  display: none;                
+}
+
+.timeline {
+  display: flex;
+  width: 7000px;  
+  height: 10px;
+  background: linear-gradient(270deg, #ff0000, #ffee00, #15ff00, #00d5ff, #002fff, #ff0000);
+  border-radius: 25px;
+  align-items: flex-start; 
+  position: relative;
+}
+
+.milestone {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-primary);
+  flex-shrink: 0;
+  position: relative;
+  top: -10px; 
+  margin: 0;
+}
+
+.milestone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.milestone p {
+  font-size: 5px;
+}
+
+.description {
+  opacity: 0;
+  transition: 0.3s ease;
+  color: white;
+  background: black;
+  padding: 5px 10px;
   border-radius: 10px;
-  overflow: hidden;
 }
 
-.rounded-vertical-bar {
-  width: 8px;                
-  height: 80px;             
-  background: #187cd3;       
-  border-radius: 50px;     
-  margin: 0 24px;            
+.milestone:hover .description {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1.2);
+margin-left: 40px;
+  margin-top: 20px;
+  font-size: 5px;
+
+
 }
+
